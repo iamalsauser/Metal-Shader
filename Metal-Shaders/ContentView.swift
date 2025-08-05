@@ -17,7 +17,7 @@ struct ContentView: View {
             MetalCameraView(renderer: renderer)
                 .ignoresSafeArea()
             // Control Panel
-            VStack {
+        VStack {
                 Spacer()
                 
                 VStack(spacing: 16) {

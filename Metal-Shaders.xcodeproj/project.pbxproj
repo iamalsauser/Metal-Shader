@@ -29,9 +29,22 @@
 		FB882E332E41DF98006148B8 /* Metal-ShadersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metal-ShadersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FB882E8E2E41FE41006148B8 /* Exceptions for "Metal-Shaders" folder in "Metal-Shaders" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FB882E1A2E41DF91006148B8 /* Metal-Shaders */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB882E1D2E41DF91006148B8 /* Metal-Shaders */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FB882E8E2E41FE41006148B8 /* Exceptions for "Metal-Shaders" folder in "Metal-Shaders" target */,
+			);
 			path = "Metal-Shaders";
 			sourceTree = "<group>";
 		};
@@ -396,8 +409,9 @@
 				DEVELOPMENT_TEAM = 5BR8H6ZB3A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Metal-Shaders/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "   This app needs camera access to apply real-time visual effects to the camera feed.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,8 +450,9 @@
 				DEVELOPMENT_TEAM = 5BR8H6ZB3A;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Metal-Shaders/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "   This app needs camera access to apply real-time visual effects to the camera feed.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

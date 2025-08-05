@@ -172,19 +172,18 @@ extension Renderer: MTKViewDelegate {
             -1.0,  1.0, 0.0, 0.0, 0.0,
              1.0,  1.0, 0.0, 1.0, 0.0
         ]
-        
         let vertexBuffer = device.makeBuffer(bytes: vertexData, length: vertexData.count * MemoryLayout<Float>.size, options: [])
         renderEncoder?.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
-        
+        // Set uniform/time buffers for vertex shader
+        renderEncoder?.setVertexBuffer(timeBuffer, offset: 0, index: 1)
+        renderEncoder?.setVertexBuffer(uniformBuffer, offset: 0, index: 2)
         // Set fragment texture
         let textureToRender = processedTexture ?? cameraTexture
         renderEncoder?.setFragmentTexture(textureToRender, index: 0)
-        
-        // Set uniform buffers
-        renderEncoder?.setVertexBuffer(timeBuffer, offset: 0, index: 0)
-        renderEncoder?.setVertexBuffer(uniformBuffer, offset: 0, index: 1)
+        // Set uniform buffers for fragment shader
         renderEncoder?.setFragmentBuffer(uniformBuffer, offset: 0, index: 0)
-        
+        renderEncoder?.setFragmentBuffer(uniformBuffer, offset: 0, index: 1)
+        renderEncoder?.setFragmentBuffer(uniformBuffer, offset: 0, index: 2)
         // Update uniform buffer with current settings
         updateUniformBuffer()
         

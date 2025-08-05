@@ -1,6 +1,28 @@
-<<<<<<< HEAD
-# Metal-Shader
-=======
+# Metal Shaders - Real-time Camera Effects
+
+---
+
+## For Interviewers: Quick Checklist
+
+Hey there! If you're reviewing or running this project, here's everything you need to know to get it working on a real iPhone or iPad:
+
+- **Camera Permissions:**
+  - The app will ask for camera access the first time you launch it. Please allow access so you can see the live video effects!
+- **Physical Device Required:**
+  - The iOS Simulator doesn't have a real camera, so you'll need to run this on an actual device to see the effects in action.
+- **No Build Errors:**
+  - All Info.plist and Metal buffer issues are fixed. You shouldn't see any build or runtime errors related to permissions or Metal.
+- **What You'll See:**
+  - A live camera feed with real-time Metal-powered visual effects (blur, edge detection, color tweaks, and more).
+  - A control panel at the bottom lets you play with all the effects in real time.
+- **If You Hit Any Issues:**
+  - Make sure camera permissions are granted (check Settings if you missed the prompt).
+  - If you see a black screen, double-check you're on a real device and not the simulator.
+
+Enjoy exploring the code and the effects! If you have any questions, just ask.
+
+---
+
 # Metal Shaders - Real-time Camera Effects
 
 A SwiftUI + Metal application that applies real-time visual effects to a camera feed using custom Metal shaders.
@@ -73,5 +95,4 @@ The app features a comprehensive control panel with sliders and toggles for:
 - More vertex shaders (spherical distortion, ripple effects)
 - Advanced fragment shaders (HDR tone mapping, color grading)
 - Touch-based magnifying glass positioning
-- Preset effect combinations 
->>>>>>> Add README.md: comprehensive project documentation and setup guide
+- Preset effect combinations
